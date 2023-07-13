@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-b456138dc4bc
+Exec   : /opt/openfoam9/platforms/linux64GccDPInt32Opt/bin/renumberMesh -parallel -overwrite
+Date   : Nov 30 2022
+Time   : 17:48:15
+Host   : "shasi-ThinkPad-Edge-E540"
+PID    : 16553
+I/O    : uncollated
+Case   : /home/shasi/Documents/CFD/Project/case
+nProcs : 2
+Slaves : 1("shasi-ThinkPad-Edge-E540.16554")
+Pstream initialised with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh size: 1174436
+Before renumbering :
+    band           : 587908
+    profile        : 3.0888389e+10
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading geometric fields
+
+Reading volScalarField p
+Reading volScalarField nut
+Reading volScalarField k
+Reading volScalarField omega
+Reading volVectorField U
+
+Renumbering processor cell decomposition map cellProcAddressing
+Renumbering processor face decomposition map faceProcAddressing
+Renumbering processor point decomposition map pointProcAddressing
+After renumbering :
+    band           : 5348
+    profile        : 4.4177261e+09
+
+Writing mesh to "constant"
+
+End
+
+Finalising parallel run

@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-b456138dc4bc
+Exec   : decomposePar -force
+Date   : Nov 30 2022
+Time   : 17:47:58
+Host   : "shasi-ThinkPad-Edge-E540"
+PID    : 16533
+I/O    : uncollated
+Case   : /home/shasi/Documents/CFD/Project/case
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Removing 0 existing processor directories
+
+
+Decomposing mesh region0
+
+Reading "decomposeParDict"
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod scotch
+
+Finished decomposition in 1.86 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+Reading hexRef8 data : cellLevel
+Reading hexRef8 data : pointLevel
+
+Processor 0
+    Number of cells = 588239
+    Number of faces shared with processor 1 = 6880
+    Number of processor patches = 1
+    Number of processor faces = 6880
+    Number of boundary faces = 68615
+
+Processor 1
+    Number of cells = 586197
+    Number of faces shared with processor 0 = 6880
+    Number of processor patches = 1
+    Number of processor faces = 6880
+    Number of boundary faces = 52794
+
+Number of processor faces = 6880
+Max number of cells = 588239 (0.17387069% above average 587218)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 6880 (0% above average 6880)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+
+End
+

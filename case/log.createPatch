@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-b456138dc4bc
+Exec   : createPatch -overwrite
+Date   : Nov 30 2022
+Time   : 17:47:45
+Host   : "shasi-ThinkPad-Edge-E540"
+PID    : 16525
+I/O    : uncollated
+Case   : /home/shasi/Documents/CFD/Project/case
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading "createPatchDict"
+
+Adding new patch inlet as patch 5 from 
+{
+    type            patch;
+}
+
+Adding new patch outlet as patch 6 from 
+{
+    type            patch;
+}
+
+Adding new patch constraint as patch 7 from 
+{
+    type            symmetry;
+}
+
+Adding new patch wall as patch 8 from 
+{
+    type            wall;
+}
+
+Adding new patch defaultFaces as patch 9 from 
+{
+    type            patch;
+}
+
+
+Moving faces from patch patch_1_0 to patch 5
+Moving faces from patch patch_2_0 to patch 6
+Moving faces from patch patch_3_0 to patch 7
+Moving faces from patch patch_4_0 to patch 8
+Moving faces from patch patch_0_0 to patch 9
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removing zero-sized patch patch_0_0 type wall at position 0
+Removing zero-sized patch patch_1_0 type wall at position 1
+Removing zero-sized patch patch_2_0 type wall at position 2
+Removing zero-sized patch patch_3_0 type wall at position 3
+Removing zero-sized patch patch_4_0 type wall at position 4
+Removing patches.
+Writing repatched mesh to 0
+
+End
+
